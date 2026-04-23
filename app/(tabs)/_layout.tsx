@@ -1,5 +1,6 @@
 import { Tabs } from "expo-router";
 import Feather from "@expo/vector-icons/Feather";
+import Header from "../../src/components/Header";
 
 export default function TabLayout() {
   return (
@@ -10,12 +11,12 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor: "#004A8D",
         },
-        headerShown: false,
+        header: () => <Header />,
         animation: "shift",
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: "Home",
           tabBarLabel: "Início",

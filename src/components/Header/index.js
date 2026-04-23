@@ -7,7 +7,7 @@ export default function Header() {
   const insets = useSafeAreaInsets();
   return (
     <View style={styles.header} paddingTop={insets.top}>
-      <Text style={styles.title}>Erzeg</Text>
+      <Text style={styles.title}>LOGO</Text>
     </View>
   );
 }
